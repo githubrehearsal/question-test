@@ -3625,4 +3625,9 @@ section .test-submit a {
   -webkit-box-shadow: 0 0 5px #c8c8c8;
           box-shadow: 0 0 5px #c8c8c8;
 }
+
+.question-bold {
+  color: #e12323;
+  text-decoration: underline;
+}
 /*# sourceMappingURL=style.css.map */

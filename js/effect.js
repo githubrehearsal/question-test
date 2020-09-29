@@ -42,55 +42,55 @@ $(document).ready(function () {
     var Answer1C = 'C：けんせつ';
     var Answer1D = 'D：めんせつ';
     //第二題
-    var Question2 = '先日発表されたiPadは性能もデザインもすぐれているから好き。';
+    var Question2 = '先日発表されたiPadは性能もデザインも<span class="question-bold">すぐれている</span>から好き。';
     var Answer2A = 'A：秀れている';
     var Answer2B = 'B：便利ている';
     var Answer2C = 'C：勝れている';
     var Answer2D = 'D：優れている';
     //第三題
-    var Question3 = '実は大和田さんは医学部出身ですよ。';
+    var Question3 = '実は大和田さんは<span class="question-bold">医学</span>部出身ですよ。';
     var Answer3A = 'A：いがく';
     var Answer3B = 'B：いやく';
     var Answer3C = 'C：いかく';
     var Answer3D = 'D：いいがく';
     //第四題
-    var Question4 = 'まさか銀行が政府相手に訴訟を起こしたとは予想外でしたね。';
+    var Question4 = 'まさか銀行が政府相手に<span class="question-bold">訴訟</span>を起こしたとは予想外でしたね。';
     var Answer4A = 'A：そしょう';
     var Answer4B = 'B：せしょう';
     var Answer4C = 'C：しゅうしょう';
     var Answer4D = 'D：そんしょう';
     //第五題
-    var Question5 = '半沢くん、これを簡潔に説明して貰おうかな。';
+    var Question5 = '半沢くん、これを<span class="question-bold">簡潔</span>に説明して貰おうかな。';
     var Answer5A = 'A：かんせつ';
     var Answer5B = 'B：かんたん';
     var Answer5C = 'C：かんけつ';
     var Answer5D = 'D：けんけつ';
     //第六題
-    var Question6 = 'はい、私が伊勢島ほてるの社長です。';
+    var Question6 = 'はい、私が伊勢島<span class="question-bold">ほてる</span>の社長です。';
     var Answer6A = 'A：ハテル';
     var Answer6B = 'B：ホテロ';
     var Answer6C = 'C：ホテル';
     var Answer6D = 'D：モテル';
     //第七題
-    var Question7 = 'まさか銀行が政府相手に訴訟を起こしたとは予想外でしたね。';
+    var Question7 = '勘違いするな、渡真利君は<span class="question-bold">単なる</span>友人です。。';
     var Answer7A = 'A：唯一の';
     var Answer7B = 'B：大切な';
     var Answer7C = 'C：ただの';
     var Answer7D = 'D：数少ない';
     //第八題
-    var Question8 = '（　　）寝てたので、何も聞こえませんでした。';
+    var Question8 = '<span class="question-bold">（　　）</span>寝てたので、何も聞こえませんでした。';
     var Answer8A = 'A：そしょう';
     var Answer8B = 'B：せしょう';
     var Answer8C = 'C：しゅうしょう';
     var Answer8D = 'D：そんしょう';
     //第九題
-    var Question9 = '木本常務はいつも電車で会社に通っているそうだ。';
+    var Question9 = '木本常務はいつも電車で会社に<span class="question-bold">通っている</span>そうだ。';
     var Answer9A = 'A：いっている';
     var Answer9B = 'B：かよっている';
     var Answer9C = 'C：むかっている';
     var Answer9D = 'D：とおっている';
     //第十題
-    var Question10 = '今回もハナちゃんにたすけてもらったよ。';
+    var Question10 = '今回もハナちゃんに<span class="question-bold">たすけて</span>もらったよ。';
     var Answer10A = 'A：援て';
     var Answer10B = 'B：救けて';
     var Answer10C = 'C：守けて';
