@@ -3577,19 +3577,19 @@ section .test-question p {
   line-height: 1.5rem;
 }
 
-section .test-answers {
+section .test-answer {
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 5%;
   margin-bottom: 5%;
 }
 
-section .test-answers h2 {
+section .test-answer h2 {
   margin-top: 2.5%;
   margin-bottom: 5%;
 }
 
-section .test-answers a {
+section .test-answer a {
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: #191919;
@@ -3599,7 +3599,7 @@ section .test-answers a {
   border-radius: 10px;
 }
 
-section .test-answers a:hover {
+section .test-answer a:hover {
   color: #2d46f0;
 }
 

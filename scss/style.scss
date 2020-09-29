@@ -44,7 +44,7 @@ section{
             line-height: 1.5rem;
         }
     }
-    .test-answers{
+    .test-answer{
         @include m-x(10%, 10%);
         @include m-y(5%, 5%);
         h2{
