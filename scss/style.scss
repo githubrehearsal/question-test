@@ -9,9 +9,18 @@
 body{
     background-color: $white;
 }
+//答案背景色啟動
 .test-answers-active{
     background-color: $white*0.95;
 }
+//答案圖片預設
+.img-default{
+    display: none !important;
+}
+.img-active{
+    display: block !important;
+}
+//單元測試
 .title{
     @include m-t(5%);
     p{
@@ -20,9 +29,7 @@ body{
         color: $gray;
     }
 }
-.alert-text{
-    color: $red;
-}
+//問答區塊
 section{
     @include absolute(0, 0, 0, 0, auto);
     height: 75%;
@@ -31,7 +38,7 @@ section{
     max-width: 600px;
     background-color: $white;
     border-radius: 20px;
-    box-shadow: 0 0 10px $light-gray;
+    //題目
     .test-question{
         @include m-x(10%, 10%);
         @include p-y(5%, 5%);
@@ -42,8 +49,13 @@ section{
         }
         p{
             line-height: 1.5rem;
+            .question-bold{
+                color: $red;
+                text-decoration: underline;
+            }
         }
     }
+    //答案
     .test-answer{
         @include m-x(10%, 10%);
         @include m-y(5%, 5%);
@@ -56,11 +68,21 @@ section{
             display: block;
             transition: 0.25s linear;
             border-radius: 10px;
+            position: relative;
+            span{
+                @include absolute(0, 10px, 0, none, auto);
+                height: 10px;
+                width: 10px;
+                border-radius: 10px;
+                background-color: $blue;
+                display: none;
+            }
         }
         a:hover{
             color: $blue;
         }
     }
+    //下一題目
     .test-submit{
         @include m-x(10%, 10%);
         @include m-y(5%, 5%);
@@ -77,8 +99,4 @@ section{
             box-shadow: 0 0 5px $light-gray;
         }
     }
-}
-.question-bold{
-    color: $red;
-    text-decoration: underline;
 }

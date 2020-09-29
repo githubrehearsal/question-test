@@ -4,8 +4,10 @@ $(document).ready(function () {
         //啟動答案狀態
         $('.test-answer a').removeClass('test-answers-active');
         $('.test-answer a').attr('data-status', 'off');
+        $('.test-answer a span').removeClass('img-active');
         $(this).addClass('test-answers-active');
         $(this).attr('data-status', 'on');
+        $(this).children('span').addClass('img-active');
         //啟動下一題按鈕
         $('.test-submit').fadeIn(500);
         return false;
@@ -14,8 +16,10 @@ $(document).ready(function () {
         //啟動答案狀態
         $('.test-answer a').removeClass('test-answers-active');
         $('.test-answer a').attr('data-status', 'off');
+        $('.test-answer a span').removeClass('img-active');
         $(this).addClass('test-answers-active');
         $(this).attr('data-status', 'on');
+        $(this).children('span').addClass('img-active');
         //啟動下一題按鈕
         $('.test-submit').fadeIn(500);
         return false;
@@ -27,16 +31,16 @@ $(document).ready(function () {
         $('.test-submit').children('a').remove();
         //新增下一題
         $('.test-question').append('<p>' + Question + '</p>');
-        $('.test-answer').append('<a href="" data-status="off">' + Answer1 + '</a>');
-        $('.test-answer').append('<a href="" data-status="off">' + Answer2 + '</a>');
-        $('.test-answer').append('<a href="" data-status="off">' + Answer3 + '</a>');
-        $('.test-answer').append('<a href="" data-status="off">' + Answer4 + '</a>');
+        $('.test-answer').append('<a href="" data-status="off">' + Answer1 + '<span></span></a>');
+        $('.test-answer').append('<a href="" data-status="off">' + Answer2 + '<span></span></a>');
+        $('.test-answer').append('<a href="" data-status="off">' + Answer3 + '<span></span></a>');
+        $('.test-answer').append('<a href="" data-status="off">' + Answer4 + '<span></span></a>');
         //新增下一題按鈕
         $('.test-submit').append('<a href="" class="' + BtnNum + '">下一題</a>')
-    }
+    };
     //題庫
     //第一題
-    var Question1 = 'いよいよ今日は入社面接だ、緊張するわ。';
+    var Question1 = 'いよいよ今日は入社<span class="question-bold">面接</span>だ、緊張するわ。';
     var Answer1A = 'A：のんせつ';
     var Answer1B = 'B：めんせい';
     var Answer1C = 'C：けんせつ';
@@ -79,14 +83,14 @@ $(document).ready(function () {
     var Answer7D = 'D：数少ない';
     //第八題
     var Question8 = '<span class="question-bold">（　　）</span>寝てたので、何も聞こえませんでした。';
-    var Answer8A = 'A：そしょう';
-    var Answer8B = 'B：せしょう';
-    var Answer8C = 'C：しゅうしょう';
-    var Answer8D = 'D：そんしょう';
+    var Answer8A = 'A：ぐっすり';
+    var Answer8B = 'B：はっきり';
+    var Answer8C = 'C：ゆっくり';
+    var Answer8D = 'D：すみやかに';
     //第九題
     var Question9 = '木本常務はいつも電車で会社に<span class="question-bold">通っている</span>そうだ。';
     var Answer9A = 'A：いっている';
-    var Answer9B = 'B：かよっている';
+    var Answer9B = 'B：はっきり';
     var Answer9C = 'C：むかっている';
     var Answer9D = 'D：とおっている';
     //第十題
@@ -102,7 +106,7 @@ $(document).ready(function () {
         $('.test-submit').children('a').remove();
         //顯示結果
         alert(grade);
-    }
+    };
     //N1等級
     var FinalN1 = '評測為N1';
     var FinalN2 = '評測為N2';
@@ -117,7 +121,7 @@ $(document).ready(function () {
         var AnswersStatus4 = $('.test-answer a').eq(3).attr('data-status');
         if (AnswersStatus4 == 'on') {
             //正確
-            Test(Question2, Answer1A, Answer1B, Answer1C, Answer1D, 'Q2');
+            Test(Question2, Answer2A, Answer2B, Answer2C, Answer2D, 'Q2');
         } else if (AnswersStatus1 == 'on' || AnswersStatus2 == 'on' || AnswersStatus3 == 'on') {
             //錯誤
             Test(Question3, Answer3A, Answer3B, Answer3C, Answer3D, 'Q3');
