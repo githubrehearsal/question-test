@@ -90,7 +90,7 @@ $(document).ready(function () {
     //第九題
     var Question9 = '木本常務はいつも電車で会社に<span class="question-bold">通っている</span>そうだ。';
     var Answer9A = 'A：いっている';
-    var Answer9B = 'B：はっきり';
+    var Answer9B = 'B：かよっている';
     var Answer9C = 'C：むかっている';
     var Answer9D = 'D：とおっている';
     //第十題
