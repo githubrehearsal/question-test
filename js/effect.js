@@ -9,7 +9,7 @@ $(document).ready(function () {
         $(this).attr('data-status', 'on');
         $(this).children('span').addClass('img-active');
         //啟動下一題按鈕
-        $('.test-submit').fadeIn(500);
+        $('.test-submit').fadeIn(250);
         return false;
     });
     $('body').on('click', '.test-answer a', function () {
@@ -21,7 +21,7 @@ $(document).ready(function () {
         $(this).attr('data-status', 'on');
         $(this).children('span').addClass('img-active');
         //啟動下一題按鈕
-        $('.test-submit').fadeIn(500);
+        $('.test-submit').fadeIn(250);
         return false;
     });
     //作答函式
@@ -36,7 +36,7 @@ $(document).ready(function () {
         $('.test-answer').append('<a href="" data-status="off">' + Answer3 + '<span></span></a>');
         $('.test-answer').append('<a href="" data-status="off">' + Answer4 + '<span></span></a>');
         //新增下一題按鈕
-        $('.test-submit').append('<a href="" class="' + BtnNum + '">下一題</a>')
+        $('.test-submit').append('<a href="" class="' + BtnNum + '">下一題</a>').fadeOut(250);;
     };
     //題庫
     //第一題
