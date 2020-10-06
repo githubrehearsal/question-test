@@ -128,23 +128,8 @@ $(document).ready(function () {
         }
         return false;
     });
-    //Q1-Q2
+    //Q2
     $('body').on('click', '.Q2', function () {
-        var AnswersStatus1 = $('.test-answer a').eq(0).attr('data-status');
-        var AnswersStatus2 = $('.test-answer a').eq(1).attr('data-status');
-        var AnswersStatus3 = $('.test-answer a').eq(2).attr('data-status');
-        var AnswersStatus4 = $('.test-answer a').eq(3).attr('data-status');
-        if (AnswersStatus1 == 'on') {
-            //正確
-            Test(Question10, Answer10A, Answer10B, Answer10C, Answer10D, 'Q10');
-        } else if (AnswersStatus2 == 'on' || AnswersStatus3 == 'on' || AnswersStatus4 == 'on') {
-            //錯誤
-            Test(Question6, Answer6A, Answer6B, Answer6C, Answer6D, 'Q6');
-        }
-        return false;
-    });
-    //Q1-Q3
-    $('body').on('click', '.Q3', function () {
         var AnswersStatus1 = $('.test-answer a').eq(0).attr('data-status');
         var AnswersStatus2 = $('.test-answer a').eq(1).attr('data-status');
         var AnswersStatus3 = $('.test-answer a').eq(2).attr('data-status');
@@ -158,53 +143,23 @@ $(document).ready(function () {
         }
         return false;
     });
-    //Q1-Q2-Q10
-    $('body').on('click', '.Q10', function () {
-        var AnswersStatus1 = $('.test-answer a').eq(0).attr('data-status');
-        var AnswersStatus2 = $('.test-answer a').eq(1).attr('data-status');
-        var AnswersStatus3 = $('.test-answer a').eq(2).attr('data-status');
-        var AnswersStatus4 = $('.test-answer a').eq(3).attr('data-status');
-        if (AnswersStatus4 == 'on') {
-            //正確
-            Final(FinalN3);
-        } else if (AnswersStatus1 == 'on' || AnswersStatus2 == 'on' || AnswersStatus3 == 'on') {
-            //錯誤
-            Test(Question9, Answer9A, Answer9B, Answer9C, Answer9D, 'Q9');
-        }
-        return false;
-    });
-    //Q1-Q2-Q6
-    $('body').on('click', '.Q6', function () {
-        var AnswersStatus1 = $('.test-answer a').eq(0).attr('data-status');
-        var AnswersStatus2 = $('.test-answer a').eq(1).attr('data-status');
-        var AnswersStatus3 = $('.test-answer a').eq(2).attr('data-status');
-        var AnswersStatus4 = $('.test-answer a').eq(3).attr('data-status');
-        if (AnswersStatus3 == 'on') {
-            //正確
-            Test(Question9, Answer9A, Answer9B, Answer9C, Answer9D, 'Q9');
-        } else if (AnswersStatus1 == 'on' || AnswersStatus2 == 'on' || AnswersStatus4 == 'on') {
-            //錯誤
-            Final(FinalN5);
-        }
-        return false;
-    });
-    //Q1-Q3-Q4
-    $('body').on('click', '.Q4', function () {
+    //Q3
+    $('body').on('click', '.Q3', function () {
         var AnswersStatus1 = $('.test-answer a').eq(0).attr('data-status');
         var AnswersStatus2 = $('.test-answer a').eq(1).attr('data-status');
         var AnswersStatus3 = $('.test-answer a').eq(2).attr('data-status');
         var AnswersStatus4 = $('.test-answer a').eq(3).attr('data-status');
         if (AnswersStatus1 == 'on') {
             //正確
-            Final(FinalN3);
+            Test(Question10, Answer10A, Answer10B, Answer10C, Answer10D, 'Q10');
         } else if (AnswersStatus2 == 'on' || AnswersStatus3 == 'on' || AnswersStatus4 == 'on') {
             //錯誤
-            Test(Question3, Answer3A, Answer3B, Answer3C, Answer3D, 'Q3');
+            Test(Question6, Answer6A, Answer6B, Answer6C, Answer6D, 'Q6');
         }
         return false;
     });
-    //Q1-Q3-Q8
-    $('body').on('click', '.Q8', function () {
+    //Q4
+    $('body').on('click', '.Q4', function () {
         var AnswersStatus1 = $('.test-answer a').eq(0).attr('data-status');
         var AnswersStatus2 = $('.test-answer a').eq(1).attr('data-status');
         var AnswersStatus3 = $('.test-answer a').eq(2).attr('data-status');
@@ -218,22 +173,7 @@ $(document).ready(function () {
         }
         return false;
     });
-    //Q1-Q2-Q10-Q9
-    $('body').on('click', '.Q9', function () {
-        var AnswersStatus1 = $('.test-answer a').eq(0).attr('data-status');
-        var AnswersStatus2 = $('.test-answer a').eq(1).attr('data-status');
-        var AnswersStatus3 = $('.test-answer a').eq(2).attr('data-status');
-        var AnswersStatus4 = $('.test-answer a').eq(3).attr('data-status');
-        if (AnswersStatus2 == 'on') {
-            //正確
-            Final(FinalN4);
-        } else if (AnswersStatus1 == 'on' || AnswersStatus3 == 'on' || AnswersStatus4 == 'on') {
-            //錯誤
-            Final(FinalN5);
-        }
-        return false;
-    });
-    //Q1-Q3-Q8-Q5
+    //Q5
     $('body').on('click', '.Q5', function () {
         var AnswersStatus1 = $('.test-answer a').eq(0).attr('data-status');
         var AnswersStatus2 = $('.test-answer a').eq(1).attr('data-status');
@@ -248,7 +188,22 @@ $(document).ready(function () {
         }
         return false;
     });
-    //Q1-Q3-Q8-Q7
+    //Q6
+    $('body').on('click', '.Q6', function () {
+        var AnswersStatus1 = $('.test-answer a').eq(0).attr('data-status');
+        var AnswersStatus2 = $('.test-answer a').eq(1).attr('data-status');
+        var AnswersStatus3 = $('.test-answer a').eq(2).attr('data-status');
+        var AnswersStatus4 = $('.test-answer a').eq(3).attr('data-status');
+        if (AnswersStatus3 == 'on') {
+            //正確
+            Test(Question9, Answer9A, Answer9B, Answer9C, Answer9D, 'Q9');
+        } else if (AnswersStatus1 == 'on' || AnswersStatus2 == 'on' || AnswersStatus4 == 'on') {
+            //錯誤
+            Final(FinalN5);
+        }
+        return false;
+    });
+    //Q7
     $('body').on('click', '.Q7', function () {
         var AnswersStatus1 = $('.test-answer a').eq(0).attr('data-status');
         var AnswersStatus2 = $('.test-answer a').eq(1).attr('data-status');
@@ -260,6 +215,51 @@ $(document).ready(function () {
         } else if (AnswersStatus1 == 'on' || AnswersStatus2 == 'on' || AnswersStatus4 == 'on') {
             //錯誤
             Final(FinalN2);
+        }
+        return false;
+    });
+    //Q8
+    $('body').on('click', '.Q8', function () {
+        var AnswersStatus1 = $('.test-answer a').eq(0).attr('data-status');
+        var AnswersStatus2 = $('.test-answer a').eq(1).attr('data-status');
+        var AnswersStatus3 = $('.test-answer a').eq(2).attr('data-status');
+        var AnswersStatus4 = $('.test-answer a').eq(3).attr('data-status');
+        if (AnswersStatus1 == 'on') {
+            //正確
+            Final(FinalN3);
+        } else if (AnswersStatus2 == 'on' || AnswersStatus3 == 'on' || AnswersStatus4 == 'on') {
+            //錯誤
+            Test(Question3, Answer3A, Answer3B, Answer3C, Answer3D, 'Q3');
+        }
+        return false;
+    });
+    //Q9
+    $('body').on('click', '.Q9', function () {
+        var AnswersStatus1 = $('.test-answer a').eq(0).attr('data-status');
+        var AnswersStatus2 = $('.test-answer a').eq(1).attr('data-status');
+        var AnswersStatus3 = $('.test-answer a').eq(2).attr('data-status');
+        var AnswersStatus4 = $('.test-answer a').eq(3).attr('data-status');
+        if (AnswersStatus2 == 'on') {
+            //正確
+            Final(FinalN4);
+        } else if (AnswersStatus1 == 'on' || AnswersStatus3 == 'on' || AnswersStatus4 == 'on') {
+            //錯誤
+            Final(FinalN5);
+        }
+        return false;
+    });
+    //Q10
+    $('body').on('click', '.Q10', function () {
+        var AnswersStatus1 = $('.test-answer a').eq(0).attr('data-status');
+        var AnswersStatus2 = $('.test-answer a').eq(1).attr('data-status');
+        var AnswersStatus3 = $('.test-answer a').eq(2).attr('data-status');
+        var AnswersStatus4 = $('.test-answer a').eq(3).attr('data-status');
+        if (AnswersStatus4 == 'on') {
+            //正確
+            Final(FinalN3);
+        } else if (AnswersStatus1 == 'on' || AnswersStatus2 == 'on' || AnswersStatus3 == 'on') {
+            //錯誤
+            Test(Question9, Answer9A, Answer9B, Answer9C, Answer9D, 'Q9');
         }
         return false;
     });
